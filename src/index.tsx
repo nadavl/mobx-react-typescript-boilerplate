@@ -5,36 +5,59 @@ import {observer} from 'mobx-react';
 import DevTools from 'mobx-react-devtools';
 
 class AppState {
-    @observable timer = 0;
-    
-    constructor() {
-        setInterval(() => {
-            this.timer += 1;
-        }, 1000);
-    }
-    
-    resetTimer() {
-        this.timer = 0;
-    }
+  @observable timer = 0;
+
+  constructor () {
+    setInterval(() => {
+      this.timer += 1;
+    }, 1000);
+  }
+
+  resetTimer () {
+    this.timer = 0;
+  }
 }
 
 @observer
 class TimerView extends React.Component<{appState: AppState}, {}> {
-    render() {
-        return (
-            <div>
-                <button onClick={this.onReset}>
-                    Seconds passed: {this.props.appState.timer}
-                </button>
-                <DevTools />
-            </div>
-        );
-     }
+  render () {
+    return null;
+  }
 
-     onReset = () => {
-         this.props.appState.resetTimer();
-     }
-};
+  onReset = () => {
+    this.props.appState.resetTimer();
+  }
+}
+;
 
-const appState =  new AppState();
-ReactDOM.render(<TimerView appState={appState} />, document.getElementById('root'));
+var PanZoom = React.createClass({
+  render: function () {
+    return (
+
+      <div className="cy-panzoom" style={{position: 'absolute'}}>
+        <div className="cy-panzoom-zoom-in cy-panzoom-zoom-button"><span className="icon fa fa-plus"/></div>
+        <div className="cy-panzoom-zoom-out cy-panzoom-zoom-button"><span className="icon fa fa-minus"/></div>
+        <div className="cy-panzoom-reset cy-panzoom-zoom-button"><span className="icon fa fa-expand"/></div>
+        <div className="cy-panzoom-slider">
+          <div className="cy-panzoom-slider-background"/>
+          <div className="cy-panzoom-slider-handle" style={{top: '32.2203px'}}><span className="icon fa fa-minus"/>
+          </div>
+          <div className="cy-panzoom-no-zoom-tick" style={{top: 43}}/>
+        </div>
+        <div className="cy-panzoom-panner">
+          <div className="cy-panzoom-panner-handle"/>
+          <div className="cy-panzoom-pan-up cy-panzoom-pan-button"/>
+          <div className="cy-panzoom-pan-down cy-panzoom-pan-button"/>
+          <div className="cy-panzoom-pan-left cy-panzoom-pan-button"/>
+          <div className="cy-panzoom-pan-right cy-panzoom-pan-button"/>
+          <div className="cy-panzoom-pan-indicator" style={{display: 'none'}}/>
+        </div>
+      </div>
+    );
+  }
+});
+
+ReactDOM.render(<PanZoom />, document.getElementById('root'));
+
+// const appState = new AppState();
+// ReactDOM.render(<TimerView appState={appState}/>, document.getElementById('root'));
