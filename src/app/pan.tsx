@@ -1,6 +1,11 @@
 import * as React from 'react';
 
 export default class Pan extends React.Component<{}, {}> {
+
+  constructor (props) {
+    super(props);
+  }
+
   render () {
     return (
       <div className="cy-panzoom-panner">
