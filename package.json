@@ -31,6 +31,7 @@
   },
   "dependencies": {
     "font-awesome": "^4.5.0",
+    "jquery": "^2.2.3",
     "mobx": "^2.0.2",
     "mobx-react": "^3.0.1",
     "mobx-react-devtools": "^4.0.2",
@@ -38,6 +39,7 @@
     "react": "^0.14.0",
     "react-dom": "^0.14.0",
     "react-redux": "^4.4.1",
+    "react-slider": "^0.6.1",
     "redux": "^3.3.1"
   }
 }

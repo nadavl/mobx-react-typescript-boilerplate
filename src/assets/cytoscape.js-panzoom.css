@@ -67,6 +67,7 @@
 	border-right: 5px solid transparent;
 	border-bottom: 5px solid #666;
 	box-sizing: content-box;
+	cursor: default;
 }
 
 .cy-panzoom-pan-down {
@@ -79,6 +80,7 @@
 	border-right: 5px solid transparent;
 	border-top: 5px solid #666;
 	box-sizing: content-box;
+	cursor: default;
 }
 
 .cy-panzoom-pan-left {
@@ -91,6 +93,7 @@
 	border-bottom: 5px solid transparent;
 	border-right: 5px solid #666;
 	box-sizing: content-box;
+	cursor: default;
 }
 
 .cy-panzoom-pan-right {
@@ -103,6 +106,7 @@
 	border-bottom: 5px solid transparent;
 	border-left: 5px solid #666;
 	box-sizing: content-box;
+	cursor: default;
 }
 
 .cy-panzoom-pan-indicator {
@@ -188,6 +192,7 @@
 	border-radius: 40px;
 	margin-left: -1px;
 	box-sizing: content-box;
+	cursor: default;
 }
 
 .cy-panzoom-panner-handle {
@@ -200,6 +205,7 @@
 	position: absolute;
 	z-index: 999;
 	box-sizing: content-box;
+	cursor: default;
 }
 
 .cy-panzoom-zoom-only .cy-panzoom-slider,
