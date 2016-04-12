@@ -136,10 +136,10 @@
 }
 
 .cy-panzoom-slider-background {
-	position: absolute;
+    /*position: relative;*/
 	top: 0;
 	width: 2px;
-	height: 100px;
+	/*height: 100px;*/
 	left: 5px;
 	background: #fff;
 	border-left: 1px solid #999;
@@ -148,7 +148,7 @@
 }
 
 .cy-panzoom-slider-handle {
-	position: absolute;
+	/*position: absolute;*/
 	width: 16px;
 	height: 8px;
 	background: #fff;

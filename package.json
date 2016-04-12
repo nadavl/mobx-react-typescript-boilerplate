@@ -38,8 +38,8 @@
     "object-assign": "^4.0.1",
     "react": "^0.14.0",
     "react-dom": "^0.14.0",
+    "react-rangeslider": "^1.0.0",
     "react-redux": "^4.4.1",
-    "react-slider": "^0.6.1",
     "redux": "^3.3.1"
   }
 }
